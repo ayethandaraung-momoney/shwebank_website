@@ -1,82 +1,195 @@
-import Head from 'next/head'
+import Image from 'next/image'
 
-export default function Home() {
+import Layout from '@/components/Layout'
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
+    <Layout>
+      {/* Hero Section */}
+      <section className='text-gray-600 body-font'>
+        <div className='container mx-auto flex px-5 py-40 md:flex-row flex-col items-center'>
+          <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
+            <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>
+              Before they sold out
+              <br className='hidden lg:inline-block' />
+              readymade gluten
+            </h1>
+            <p className='mb-8 leading-relaxed'>
+              Copper mug try-hard pitchfork pour-over freegan heirloom neutra
+              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
+              park mlkshk tote bag selvage hot chicken authentic tumeric
+              truffaut hexagon try-hard chambray.
             </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <div className='flex justify-center'>
+              <button className='inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg'>
+                Button
+              </button>
+              <button className='ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg'>
+                Button
+              </button>
+            </div>
+          </div>
+          <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6'>
+            <Image
+              className='object-cover object-center rounded'
+              alt='hero'
+              src='/images/hero.jpg'
+              width={170}
+              height={100}
+            />
+          </div>
         </div>
-      </main>
+      </section>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
-    </div>
+      {/* Features Section - row */}
+      <section className='bg-gray-100 dark:bg-gray-900 lg:py-12 lg:flex lg:justify-center'>
+        <div className='bg-white dark:bg-gray-800 lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg'>
+          <div className='lg:w-1/2'>
+            <div className='h-64 bg-cover lg:rounded-lg lg:h-full'>
+              <Image
+                src='/images/hero.jpg'
+                width={750}
+                height={600}
+                alt='feature image 1'
+              />
+            </div>
+          </div>
+
+          <div className='max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2'>
+            <h2 className='text-2xl font-bold text-gray-800 dark:text-white md:text-3xl'>
+              Build Your New{' '}
+              <span className='text-blue-600 dark:text-blue-400'>Idea</span>
+            </h2>
+            <p className='mt-4 text-gray-600 dark:text-gray-400'>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              modi reprehenderit vitae exercitationem aliquid dolores ullam
+              temporibus enim expedita aperiam mollitia iure consectetur dicta
+              tenetur, porro consequuntur saepe accusantium consequatur.
+            </p>
+
+            <div className='mt-8'>
+              <a
+                href='#'
+                className='px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700'
+              >
+                Start Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section - column */}
+      <section className='bg-gray-100 dark:bg-gray-900 lg:py-12 lg:flex lg:justify-center'>
+        <div className='bg-white dark:bg-gray-800 lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg'>
+          <div className='lg:w-1/2'>
+            <div className='h-64 bg-cover lg:rounded-lg lg:h-full'>
+              <Image
+                src='/images/hero.jpg'
+                width={750}
+                height={600}
+                alt='feature image 1'
+              />
+            </div>
+          </div>
+
+          <div className='max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2'>
+            <h2 className='text-2xl font-bold text-gray-800 dark:text-white md:text-3xl'>
+              Build Your New{' '}
+              <span className='text-blue-600 dark:text-blue-400'>Idea</span>
+            </h2>
+            <p className='mt-4 text-gray-600 dark:text-gray-400'>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              modi reprehenderit vitae exercitationem aliquid dolores ullam
+              temporibus enim expedita aperiam mollitia iure consectetur dicta
+              tenetur, porro consequuntur saepe accusantium consequatur.
+            </p>
+
+            <div className='mt-8'>
+              <a
+                href='#'
+                className='px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700'
+              >
+                Start Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className='text-gray-600 body-font'>
+        <div className='container px-5 py-24 mx-auto'>
+          <div className='flex flex-wrap -m-4'>
+            <div className='lg:w-1/3 lg:mb-0 mb-6 p-4'>
+              <div className='h-full text-center'>
+                <Image
+                  alt='testimonial'
+                  className='w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100'
+                  src='/images/hero.jpg'
+                  width={302}
+                  height={300}
+                />
+                <p className='leading-relaxed'>
+                  Edison bulb retro cloud bread echo park, helvetica stumptown
+                  taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
+                  ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
+                  adaptogen squid fanny pack vaporware.
+                </p>
+                <span className='inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4'></span>
+                <h2 className='text-gray-900 font-medium title-font tracking-wider text-sm'>
+                  HOLDEN CAULFIELD
+                </h2>
+                <p className='text-gray-500'>Senior Product Designer</p>
+              </div>
+            </div>
+            <div className='lg:w-1/3 lg:mb-0 mb-6 p-4'>
+              <div className='h-full text-center'>
+                <Image
+                  alt='testimonial'
+                  className='w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100'
+                  src='/images/hero.jpg'
+                  width={302}
+                  height={300}
+                />
+                <p className='leading-relaxed'>
+                  Edison bulb retro cloud bread echo park, helvetica stumptown
+                  taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
+                  ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
+                  adaptogen squid fanny pack vaporware.
+                </p>
+                <span className='inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4'></span>
+                <h2 className='text-gray-900 font-medium title-font tracking-wider text-sm'>
+                  ALPER KAMU
+                </h2>
+                <p className='text-gray-500'>UI Develeoper</p>
+              </div>
+            </div>
+            <div className='lg:w-1/3 lg:mb-0 p-4'>
+              <div className='h-full text-center'>
+                <Image
+                  alt='testimonial'
+                  className='w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100'
+                  src='/images/hero.jpg'
+                  width={302}
+                  height={300}
+                />
+                <p className='leading-relaxed'>
+                  Edison bulb retro cloud bread echo park, helvetica stumptown
+                  taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
+                  ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
+                  adaptogen squid fanny pack vaporware.
+                </p>
+                <span className='inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4'></span>
+                <h2 className='text-gray-900 font-medium title-font tracking-wider text-sm'>
+                  HENRY LETHAM
+                </h2>
+                <p className='text-gray-500'>CTO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
   )
 }
