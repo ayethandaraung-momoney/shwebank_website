@@ -14,7 +14,7 @@ export default function Layout({ title, keywords, description, children }) {
 
       <Header />
 
-      <div className='container'>{children}</div>
+      <div className='container px-6'>{children}</div>
 
       <Footer />
     </div>
@@ -22,7 +22,7 @@ export default function Layout({ title, keywords, description, children }) {
 }
 
 Layout.defaultProps = {
-  title: 'DJ Events | Find the hottest parties',
+  title: 'Home | Swhe Bank',
   description: 'Find the latest DJ and other musical events',
   keywords: 'music, dj, edm, events',
 }
