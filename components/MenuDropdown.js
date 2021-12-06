@@ -5,11 +5,11 @@ import { Menu, Transition } from '@headlessui/react'
 
 export default function Example({ menuText }) {
   return (
-    <Menu as='div' className='relative inline-block text-left'>
+    <Menu as='div' className='relative inline-block text-left mt-0.5'>
       <div>
         <Menu.Button className='inline-flex justify-center w-full font-medium hover:text-yellow-999 focus:outline-none'>
           {menuText}
-          <FaAngleDown className='w-5 h-5 ml-1 mt-0.5' aria-hidden='true' />
+          <FaAngleDown className='w-2 h-3.5 ml-1.5 mt-1' aria-hidden='true' />
         </Menu.Button>
       </div>
       <Transition
@@ -21,7 +21,7 @@ export default function Example({ menuText }) {
         leaveFrom='transform opacity-100 scale-100'
         leaveTo='transform opacity-0 scale-95'
       >
-        <Menu.Items className='absolute left-0 w-56 mt-9 border-t-4 border-yellow-999 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+        <Menu.Items className='absolute left-0 w-56 mt-9 border-t-4 border-yellow-999 bg-white rounded-b-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
           <div className='px-1 py-1 '>
             <Menu.Item>
               {({ active }) => (

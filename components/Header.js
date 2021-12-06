@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import MenuDropdown from './MenuDropdown'
-import ToggleSwitch from './ToggleSwitch'
+import FlagIcon from './FlagIcon'
 
 export default function Header() {
   return (
@@ -14,7 +14,7 @@ export default function Header() {
           </a>
         </Link>
 
-        <nav className='cursor-pointer text-sm font-medium flex flex-wrap gap-10 items-center justify-center md:ml-auto md:mr-auto'>
+        <nav className='flex flex-wrap items-center justify-center gap-10 text-sm font-medium md:ml-auto md:mr-auto cursor-pointer'>
           <Link href='/'>
             <a className='text-yellow-999'>Home</a>
           </Link>
@@ -30,7 +30,7 @@ export default function Header() {
           <MenuDropdown menuText={'Help & Support'} />
         </nav>
 
-        <ToggleSwitch />
+        <FlagIcon />
 
         <button className='ml-10 inline-flex items-center bg-yellow-999 text-gray-888 py-2 px-5 focus:outline-none rounded text-sm font-medium mt-4 md:mt-0'>
           Login
