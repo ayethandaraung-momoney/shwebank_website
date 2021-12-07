@@ -7,7 +7,7 @@ import FlagIcon from './FlagIcon'
 export default function Header() {
   return (
     <header className='text-gray-888 font-roboto'>
-      <div className='container fixed top-0 z-50 shadow-md bg-white mx-auto flex flex-wrap p-7 flex-col md:flex-row items-center'>
+      <div className='container fixed top-0 z-20 shadow-md bg-white mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
         <Link href='/'>
           <a className='flex items-center cursor-pointer'>
             <Image src='/images/logo.png' alt='logo' width={150} height={45} />
