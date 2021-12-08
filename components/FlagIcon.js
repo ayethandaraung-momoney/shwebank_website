@@ -6,7 +6,10 @@ import { Menu, Transition } from '@headlessui/react'
 
 export default function FlagIcon() {
   return (
-    <Menu as='div' className='relative inline-block text-left'>
+    <Menu
+      as='div'
+      className='relative inline-block text-left mt-1 mr-6 md:mr-auto'
+    >
       <div>
         <Menu.Button className='mt-2 inline-flex justify-center w-full text-sm font-medium focus:outline-none'>
           <Image src='/images/engflag.jpg' alt='flag' width={27} height={18} />

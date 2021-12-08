@@ -23,7 +23,6 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* <div className='flex flex-grow flex-wrap justify-between md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center'></div> */}
         <div className='lg:w-1/4 md:w-1/2 w-full px-4'>
           <h2 className='font-roboto font-bold text-gray-999 tracking-widest text-sm mb-7'>
             QUICK LINKS
@@ -81,11 +80,11 @@ export default function Footer() {
 
       <hr className='divide-y border-2 border-gray-300 mx-20' />
 
-      <div class='container mx-auto py-5 px-20 flex flex-wrap flex-col sm:flex-row'>
-        <p class='font-roboto text-gray-888 text-sm text-center sm:text-left'>
+      <div className='container mx-auto py-5 px-20 flex flex-wrap flex-col sm:flex-row'>
+        <p className='font-roboto text-gray-888 text-sm text-center sm:text-left'>
           © 2021 Copyright Shwe Bank. All rights reserved.
         </p>
-        <span class='inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start'>
+        <span className='inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start'>
           <p className='font-roboto text-gray-999 text-sm font-semibold pr-4'>
             CONNECT WITH US
           </p>
