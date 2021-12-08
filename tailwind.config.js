@@ -17,6 +17,7 @@ module.exports = {
       },
       borderColor: {
         'yellow-999': '#FFCC00',
+        'blue-999': '#00285A',
         'gray-888': '#4D555E',
         'gray-999': '#43545C',
       },

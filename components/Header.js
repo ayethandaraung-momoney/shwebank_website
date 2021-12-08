@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <>
       <header className='text-gray-888 font-roboto'>
-        <div className='container fixed top-0 z-20 shadow-md bg-white mx-auto flex flex-wrap p-5 flex-row justify-between md:flex-row items-center'>
+        <div className='container fixed top-0 z-20 shadow-md bg-white mx-auto flex flex-wrap px-10 py-5 flex-row justify-between md:flex-row items-center'>
           <Link href='/'>
             <a className='flex items-center cursor-pointer'>
               <Image

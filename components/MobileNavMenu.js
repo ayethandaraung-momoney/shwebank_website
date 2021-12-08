@@ -5,7 +5,7 @@ import MobileNavDropdown from './MobileNavDropdown'
 
 const MobileNavMenu = ({ closeSelf }) => {
   return (
-    <div className='w-screen h-screen fixed top-0 left-0 overflow-y-scroll bg-white z-40 py-4 px-5 shadow-md'>
+    <div className='w-screen h-screen fixed top-0 left-0 overflow-y-scroll bg-white z-40 py-4 px-10 shadow-md'>
       <div className='container h-full flex flex-col'>
         {/* Top section */}
         <div className='flex flex-row justify-between py-2 items-center'>

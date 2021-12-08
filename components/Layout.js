@@ -14,7 +14,7 @@ export default function Layout({ title, keywords, description, children }) {
 
       <Header />
 
-      <div className='container px-6'>{children}</div>
+      <div className='container'>{children}</div>
 
       <Footer />
     </div>
